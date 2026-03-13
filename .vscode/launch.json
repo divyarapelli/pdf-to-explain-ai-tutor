@@ -1,0 +1,46 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Frontend (React)",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/.bin/vite",
+      "args": ["dev"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "presentation": {
+        "hidden": false,
+        "group": "Frontend",
+        "order": 1
+      }
+    },
+    {
+      "name": "Backend (Python)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/main.py",
+      "args": [],
+      "cwd": "${workspaceFolder}/backend",
+      "console": "integratedTerminal",
+      "presentation": {
+        "hidden": false,
+        "group": "Backend",
+        "order": 2
+      },
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/backend"
+      }
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Run Full Stack",
+      "configurations": ["Frontend (React)", "Backend (Python)"],
+      "presentation": {
+        "hidden": false,
+        "group": "Full Stack"
+      }
+    }
+  ]
+}
