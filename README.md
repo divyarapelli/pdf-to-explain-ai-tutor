@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PDF-to-Explain AI Tutor
 
 A comprehensive AI-powered learning platform that transforms PDF documents into interactive educational experiences with explanations, diagrams, audio, quizzes, and chat.
@@ -198,3 +199,6 @@ The frontend uses a centralized API client in `src/lib/api.ts`. All backend comm
 ## License
 
 This project is for educational purposes. Please ensure you have proper licenses for any third-party services used.
+=======
+# pdf-to-explain-ai-tutor
+>>>>>>> 78d50a095c20e204abba33992e573b2a50831f1a
